@@ -1,0 +1,123 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffecd2;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d1d1d1;
+}
+
+/* Main Layout */
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto;
+    flex: 1;
+    display: grid;
+    gap: 25px;
+}
+
+/* Shayari Card Styling */
+.shayari-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease;
+}
+
+.shayari-card:hover {
+    transform: translateY(-5px);
+}
+
+.category {
+    display: inline-block;
+    background: #ff758c;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.shayari-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Card Action Buttons */
+.card-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.copy-btn {
+    background: #ffffff;
+    color: #333;
+}
+
+.copy-btn:hover {
+    background: #e0e0e0;
+}
+
+.share-btn {
+    background: #25d366;
+    color: #fff;
+}
+
+.share-btn:hover {
+    background: #1ebe5d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    color: #ccc;
+}
